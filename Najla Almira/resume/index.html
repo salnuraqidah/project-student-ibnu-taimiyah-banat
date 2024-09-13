@@ -2,6 +2,17 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+        <!-- Bootstrap CSS CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <!--   <link rel="stylesheet" href="style.css"> -->
+    </head>
+    
+<body>
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="#">Resume</a>
@@ -48,7 +59,7 @@
             </div>
         </div>
     </Section>
-    <section id="Skills" class="py-5">
+    <section id="Skills" class="py-5" data-aos="fade-up-left">
         <div class="container">
             <h2 class="text-center mb-4">Skills</h2>
             <div class="row">
@@ -89,19 +100,92 @@
             </div>
         </div>
     </section>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
-    <!-- Bootstrap CSS CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <!--   <link rel="stylesheet" href="style.css"> -->
-</head>
+    <section id="Education" class="py-5 bg-light" data-aos="fade-right">
+        <div class="container">
+            <h2 class=" text-center mb-4">Education</h2>
+            <div class="row">
+                <div class="col-6">
+                    <div class="card mb-4 shadow-sm flex-fill">
+                        <div class="card-body">
+                          <h5 class="card-title">Elementary school</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Technoraya</h6>
+                          <p class="card-text">2012-2019</p>
+                          <p class="card-text">Banjarmasin</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-6">
+                    <div class="card mb-4 shadow-sm flex-fill">
+                        <div class="card-body">
+                          <h5 class="card-title">Junior High School</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Ibnu Taimiyah</h6>
+                          <p class="card-text">2019-2021</p>
+                          <p class="card-text">Bogor</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-6">
+                    <div class="card mb-4 shadow-sm flex-fill">
+                        <div class="card-body">
+                          <h5 class="card-title">Senior High School</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Ibnu Taimiyah</h6>
+                          <p class="card-text">2021-now</p>
+                          <p class="card-text">Bogor</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Experience" class="py-5 bg-light" data-aos="fade-up-right">
+        <div class="container">
+            <h2 class="text-center mb-4">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>Engslish Tutor at school extracullicullar</h4>
+                    <p class="text-muted">2017-2018</p>
+                    <p>Share your Description...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Contact" class="py-5" data-aos="fade-up-left">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact</h2>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <form>
+                        <div class="mb-3">
+                            <label for="Name" class="form-label">Name</label>
+                            <input type="Text" class="form-control" id="name">
+                          </div>
+                          <div class="mb-3">
+                            <label for="Email" class="form-label">Email</label>
+                            <input type="Email" class="form-control" id="email"></div>
+                            <div class="mb-3">
+                                <label for="message" class="form-tabel">Message</label>
+                                <textarea name="message" id="message" class="form-control" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-info text-white">Send message</button>
+                          </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Meowstronaut. All Rights Reserved</p>
+    </footer>
 
-<body>
+
+
     <!-- Content goes here -->
     <!-- Bootstrap JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

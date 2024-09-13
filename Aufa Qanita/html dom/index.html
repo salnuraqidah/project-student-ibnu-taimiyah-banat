@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html</title>
+</head>
+<body>
+    <form name="myform" onsubmit="return validateform()">
+        <label for="name">name : </label>
+        <input type="text" name="name"> 
+       
+        <label for="age">age : </label>
+        <input type="number" name="age"> 
+        <input type="submit" value="submit">
+
+    </form>
+    <h1 id="title" style="color:aquamarine;">web title </h1>
+    <button type="button" onclick="chagecolor()">chage color</button>
+
+    <button id="mybutton" onclick="mouseclick()">this is button</button>
+    
+
+    <script src="script.js"></script>
+<script> 
+    function changecolor() {
+    function mouseclick() {
+        let result = document.getElementById("mybutton")
+        result.innerHTML = "button di klik"
+    }
+    function mousedown(obj) {
+        obj.style.background ='pink'
+        obj.innerHTML = "mousedown"
+    }
+
+
+
+
+
+        let other_color = 'yellow'
+        let tittle = document.getElementById("title");
+
+        if (title.style.color == "red") {
+            title.style.color = other_color
+        } else {
+            title.style.color = 'red'
+        }
+    }
+</script>
+
+</body>
+</html>

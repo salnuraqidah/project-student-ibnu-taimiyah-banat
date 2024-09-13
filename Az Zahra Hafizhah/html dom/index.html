@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM</title>
+</head>
+<body>
+    <form name="myForm" onsubmit="return validateForm()">
+        <label for="name">name</label>
+        <input type="text" name="name">
+        
+        <label for="age">age</label>
+        <input type="number" name="age">
+        <input type="submit" value="submit">
+
+        <h1 id="title" style="color:blueviolet;"> Web title</h1>
+        <button type="button" onclick="changecolor()">change color</button>
+
+        <button id="myButton" onclick="mouseClick ()"
+        onmousedown="mouseDown"
+        >This is button</button>
+
+    <script src="script.js"></script>
+
+    <script>
+        function changecolor() {
+            let other_color = 'blue'
+            let title = document.getElementById("title")
+
+            if (title.style.color == "blueviolet") {
+                title.style.color = other_color
+            } else {
+                title.style.color = 'blueviolet'
+            }
+        }
+
+        function mouseClick() {
+            let result = document.getElementById("myButton")
+            result.innerHTML = "Button di klik"
+        }
+        function mouseDown (obj) {
+            obj.style.background = 'pink'
+            obj.innerHTML = "Mouse Down"
+        }
+    </script>
+</body>
+</html>
