@@ -1,0 +1,100 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+ 
+        .container {
+            margin-left: auto;
+            margin-right: auto;
+            width: 200px;
+            text-align: center;
+        }
+ 
+        .button{
+            width: 150px;
+            margin-bottom: 3px;
+            border-radius: 3px;
+            color: white;
+            margin:0;
+        }
+ 
+        .blue {
+            background-color: blue;
+        }
+ 
+        .red {
+            background-color: red;
+        }
+ 
+        #number {
+            font-size: 100px;
+            width:200px;
+            text-align: center;
+            margin:auto;
+        }
+ 
+ 
+    </style>
+    <form name="nameForm" onsubmit="return validateForm()">
+    Name: <input type="text" name="name">
+    <input type="submit" value="Submit">
+</form>
+
+<h1 id="title1" style="color : royalblue">web title</h1>
+<button type="button" onclick="changeColor()">Change Color</button>
+
+<div class="container">
+        
+    <p id="number">0</p>
+
+    <button class="button blue" onclick= count()>COUNT</button>
+    <br>
+    <button class="button red" onclick= reset()>RESET</button>
+</div>    
+
+
+<script>
+function  validateForm() {
+    let x = document.forms["nameForm"]["name"].value;
+    if (x == "") { 
+        alert("name must be filled out");
+        return false;
+  }
+}
+
+
+function changeColor() {
+    let other_color = 'royalblue'
+     let title = document.getElementById('title1')
+    
+     if(title.style.color != "blue"){
+         document.getElementById('title1').style.color = 'blue';     
+    } else {
+        document.getElementById('title1').style.color = other_color;
+    }
+    
+}
+// masukkan script javascript di sini
+function count() {
+     let num = document.getElementById("number").innerHTML;
+     let count = parseInt(num) + 1
+    
+     document.getElementById("number").innerHTML = count
+    }
+    function reset() {
+     let num = document.getElementById("number").innerHTML;
+     let reset = 0
+    
+    document.getElementById("number").innerHTML = 0 }
+</script>
+
+
+</body>
+</html>
