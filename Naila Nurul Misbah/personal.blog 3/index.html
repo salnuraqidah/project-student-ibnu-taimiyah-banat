@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+  <style>
+    .carousel-item img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+  </style>
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              course
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Thunkable</a></li>
+              <li><a class="dropdown-item" href="#">Basic website</a></li>
+              <li><a class="dropdown-item" href="#">Python</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://worldwildschooling.com/wp-content/uploads/2024/02/European-Cities-That-Are-Perfect-for-History-Lovers_Florence_-Sergey-Novikov_Adobe-Stock-Photo_61123608.jpeg-1536x864.jpg"
+            class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://worldwildschooling.com/wp-content/uploads/2023/11/Edinburgh_422288589-1024x683.jpeg"
+            class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://worldwildschooling.com/wp-content/uploads/2024/01/12-Visa-Free-Asian-Destinations_Japan_chanchai_Adobe-Stock-Photo_291927451-1024x576.jpg"
+            class="d-block w-100" alt="...">
+        </div>
+      </div>
+
+      <section id="about" class="mt-3 mb-3">
+        <div class="container">
+          <h2 class="display-4 text-center">About></h2>
+          <p class="lead text-center text-primary bg-light
+          text-opacity-75">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, rerum? Nihil, placeat
+            eaque tempore totam
+            quod porro dolores officia beatae soluta possimus rem, et sit, perferendis numquam earum distinctio
+            officiis.</p>
+          <p class="text-bg-warning">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et unde praesentium
+            distinctio tempora sit assumenda, atque quos, dolor ex eveniet nobis totam non quisquam veritatis rem
+            consequatur a omnis! Nisi.</p>
+
+          <div class="text-center">
+            <button type="button" class="btn btn-light">Learn More</button>
+          </div>
+        </div>
+      </section>
+      <section id="datatable">
+        <div class="container">
+          <h2 class="display-5 text-center">Datatable</h2>
+          <table class="table">
+          </table>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">country</th>
+                <th scope="col">historical</th>
+                <th scope="col">traditional food</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>English</td>
+                <td>Having emerged from the dialects and vocabulary of Germanic peoples—Angles, Saxons, and Jutes—who
+                  settled in Britain in the 5th century CE</td>
+                <td>full breakfast, roast dinner, fish and chips, toad in the hole and shepherd's pie</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Germany</td>
+                <td>German belongs to the West Germanic group of the Indo-European language family, along with English,
+                  Frisian, and Dutch (Netherlandic, Flemish).
+
+                  Who are the German people?
+                  Who are the German people?German as a nationality has really existed for only about a hundred and
+                  fifty years.
+                  See all videos for this article
+                  The recorded history of Germanic languages begins with their speakers’ first contact with the Romans,
+                  in the 1st century bce.</td>
+                <td>Brot & Brötchen,Käsespätzle,Currywurst</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>rome</td>
+                <td>The music of ancient Rome was a part of Roman culture from the earliest of times. Songs (carmen)
+                  were an integral part of almost every social occasion.[1] The Secular Ode of Horace, for instance, was
+                  commissioned by Augustus and performed by a mixed children's choir at the Secular Games in 17 BC</td>
+                <td>Pasta carbonara. Hands down, pasta carbonara is the queen of all Roman pastas</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>America</td>
+                <td>The human history of the Americas is thought to begin with people migrating to these areas from Asia
+                  during the height of an ice age. These groups are generally believed to have been isolated from the
+                  people of the "Old World" until the coming of Europeans in the 10th century from Iceland led by Leif
+                  Erikson, and in 1492 with the voyages of Christopher Columbus.
+
+                  The ancestors of today's American Indigenous peoples were the Paleo-Indians; they were
+                  hunter-gatherers who migrated into North America. The most popular theory asserts that migrants came
+                  to the Americas via Beringia, the land mass now covered by the ocean waters of the Bering Strait.
+                  Small lithic stage peoples followed megafauna like bison, mammoth (now extinct), and caribou, thus
+                  gaining the modern nickname "big-game hunters." Groups of people may also have traveled into North
+                  America on shelf or sheet ice along the northern Pacific coast.</td>
+                <td>hot dogs— with mustard, onions cheese and sometimes even chili — BBQ brisket, Buffalo wings,
+                  cornbread, biscuits and gravy, meatloaf, cheesesteak, lobster rolls, deep-dish pizza</td>
+
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>japan</td>
+                <td>The oldest documented history of Japan is the Chinese historical manuscript History of the
+                  Twenty-Four Dynasties from the 1st century CE. However, evidence suggests that the Japanese
+                  archipelago was inhabited by humans as early as the Upper Paleolithic period.[1] After the last ice
+                  age around 12,000 BC, the rich ecosystem of the Japanese archipelago allowed humans to survive. The
+                  oldest pottery dates from the Jōmon period.</td>
+                <td>Sushi.
+                  Okonomiyaki,Miso soup,Yakitori,Udon,Takoyaki,Soba,Sukiyaki.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <footer class="bg-body-tertiary text-center">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Images -->
+      <section class="">
+        <div class="row">
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <div data-mdb-ripple-init class="bg-image hover-overlay shadow-1-strong rounded" data-ripple-color="light">
+              <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/113.webp" class="w-100" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <div data-mdb-ripple-init class="bg-image hover-overlay shadow-1-strong rounded" data-ripple-color="light">
+              <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/111.webp" class="w-100" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <div data-mdb-ripple-init class="bg-image hover-overlay shadow-1-strong rounded" data-ripple-color="light">
+              <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/112.webp" class="w-100" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <div data-mdb-ripple-init class="bg-image hover-overlay shadow-1-strong rounded" data-ripple-color="light">
+              <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/114.webp" class="w-100" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <div data-mdb-ripple-init class="bg-image hover-overlay shadow-1-strong rounded" data-ripple-color="light">
+              <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/115.webp" class="w-100" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <div data-mdb-ripple-init class="bg-image hover-overlay shadow-1-strong rounded" data-ripple-color="light">
+              <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/116.webp" class="w-100" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Images -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2020 Copyright:
+      <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
